@@ -1,0 +1,52 @@
+header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 5
+    transition: .3s ease
+    &.header-fixed
+        background: $Black
+        .header-wrapper
+            padding: 12px 0
+            .flex
+                .colA
+                    .logo
+                        img
+                            filter: invert(1)
+                .colB
+                    .social-icon
+                        li
+                            a
+                                svg
+                                    fill: $White
+    .header-wrapper
+        padding: 35px 0
+        transition: .3s ease
+        .flex
+            align-items: center
+            .colA
+                flex: 0 1 225px
+                .logo
+                    img
+                        transition: .5s ease
+            .colB
+                flex: 1
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                .social-icon
+                    margin-right: 30px
+                    li
+                        display: inline-block
+                        vertical-align: middle
+                        &:not(:last-child)
+                            margin-right: 20px
+                        a
+                            display: block
+                            svg
+                                display: block
+                                width: 22px
+                                fill: $Black
+                                transition: .3s ease
+                            

@@ -1,0 +1,42 @@
+.banner
+    &.home-banner
+        height: 100vh
+        display: flex
+        align-items: center
+        position: relative
+        --bgsize: 1046px
+        overflow: hidden
+        .flex
+            align-items: center
+            justify-content: space-between
+            .colA
+                flex: 1
+                .content
+                    max-width: 490px
+                    h1
+                        span
+                            color: $primary
+                    .btn
+                        margin-top: 60px
+                        display: block
+                        margin-right: 48px
+                        --btnshadow: 10px
+                        button
+                            width: 100%
+                            display: block
+                            font-size: 18px
+                            padding: 15px 0
+                            border-width: 2px
+            .colB
+                flex: 0 1 50%
+                max-width: 50%
+.homeSecA
+    .flex
+        .colA
+            flex: 0 1 20%
+            max-width: 20%
+            width: 100%
+        .colB
+            flex: 0 1 80%
+            max-width: 80%
+            width: 100%
